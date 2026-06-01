@@ -40,7 +40,50 @@
 </head>
 <body class="font-sans text-slate-700 bg-white">
 
-  <!-- NAV placeholder -->
+  <!-- ===== NAVIGATION ===== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-navy shadow-md">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between" aria-label="Main navigation">
+
+      <!-- Logo / Name -->
+      <a href="#about" class="text-white font-bold text-xl tracking-tight hover:text-blue-300 transition-colors">
+        Your Name
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+        <li><a href="#about"      class="hover:text-white transition-colors">About</a></li>
+        <li><a href="#projects"   class="hover:text-white transition-colors">Projects</a></li>
+        <li><a href="#skills"     class="hover:text-white transition-colors">Skills</a></li>
+        <li><a href="#experience" class="hover:text-white transition-colors">Experience</a></li>
+        <li><a href="#contact"    class="hover:text-white transition-colors">Contact</a></li>
+      </ul>
+
+      <!-- Mobile: hamburger (pure CSS checkbox toggle) -->
+      <div class="md:hidden relative">
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-label="Toggle navigation menu" />
+        <label for="menu-toggle" class="cursor-pointer text-white select-none text-2xl" aria-hidden="true">&#9776;</label>
+
+        <!-- Mobile dropdown -->
+        <ul class="hidden peer-checked:flex flex-col absolute right-0 top-10 bg-navy-dark w-48 rounded-lg shadow-xl
+                   text-slate-200 text-sm font-medium py-2 z-50">
+          <li><a href="#about"      onclick="document.getElementById('menu-toggle').checked=false"
+                 class="block px-4 py-2 hover:bg-navy-light transition-colors">About</a></li>
+          <li><a href="#projects"   onclick="document.getElementById('menu-toggle').checked=false"
+                 class="block px-4 py-2 hover:bg-navy-light transition-colors">Projects</a></li>
+          <li><a href="#skills"     onclick="document.getElementById('menu-toggle').checked=false"
+                 class="block px-4 py-2 hover:bg-navy-light transition-colors">Skills</a></li>
+          <li><a href="#experience" onclick="document.getElementById('menu-toggle').checked=false"
+                 class="block px-4 py-2 hover:bg-navy-light transition-colors">Experience</a></li>
+          <li><a href="#contact"    onclick="document.getElementById('menu-toggle').checked=false"
+                 class="block px-4 py-2 hover:bg-navy-light transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Push content below fixed nav -->
+  <div class="h-16"></div>
   <!-- MAIN placeholder -->
   <!-- FOOTER placeholder -->
 
