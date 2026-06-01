@@ -84,7 +84,51 @@
 
   <!-- Push content below fixed nav -->
   <div class="h-16"></div>
-  <!-- MAIN placeholder -->
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="bg-white py-20 px-6">
+      <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+
+        <!-- Text -->
+        <div class="flex-1">
+          <p class="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-2">Welcome</p>
+          <h1 class="text-4xl md:text-5xl font-bold text-navy mb-4 leading-tight">
+            Hi, I'm <span class="text-blue-600">Your Name</span>
+          </h1>
+          <p class="text-xl text-slate-500 font-medium mb-4">Software Engineer</p>
+          <p class="text-slate-600 text-lg leading-relaxed mb-8">
+            I build reliable, scalable software with a focus on clean architecture and
+            pragmatic engineering. With X years of experience across Y and Z, I enjoy
+            solving hard problems and shipping products that matter.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#projects"
+               class="bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-light transition-colors">
+              View My Work
+            </a>
+            <a href="assets/resume.pdf" target="_blank" rel="noopener"
+               class="border-2 border-navy text-navy px-6 py-3 rounded-lg font-semibold hover:bg-navy hover:text-white transition-colors">
+              Download Resume
+            </a>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="flex-shrink-0">
+          <img src="assets/profile.jpg"
+               alt="Profile photo of Your Name"
+               class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover shadow-xl border-4 border-slate-100" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects, Skills, Experience, Contact sections go here -->
+
+  </main>
   <!-- FOOTER placeholder -->
 
 </body>
